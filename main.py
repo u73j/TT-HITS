@@ -1,5 +1,7 @@
 import os
+from keep_alive import keep_alive
 
+keep_alive()
 try:
     import random
     import re
@@ -37,7 +39,6 @@ import urllib.parse
 import multiprocessing
 import re
 import random
-from keep_alive import keep_alive
 import os, requests, sys, time, datetime
 # الألوان
 E = '\033[1;31m'
@@ -633,4 +634,3 @@ for _ in range(2):
 for thread in Threads:
     thread.join()
 
-keep_alive()
